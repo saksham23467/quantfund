@@ -1,0 +1,56 @@
+{
+  "acquisition_timestamp": "2026-08-12T09:03:17.405024+00:00",
+  "capabilities": {
+    "authority_evidence_refs": [
+      "TEST_FIXTURE_ONLY"
+    ],
+    "corporate_action_quality": "partial",
+    "delisted_coverage": "partial",
+    "historical_depth": "2024-01-02..2024-01-31",
+    "identity_coverage": "complete",
+    "license_status": "verified",
+    "redistribution_allowed": true,
+    "supports_corporate_actions": true,
+    "supports_daily_bars": true,
+    "supports_delisted_instruments": true,
+    "supports_historical_identifiers": true,
+    "supports_instrument_master": true,
+    "supports_licensing_evidence": true,
+    "supports_pit_universe": true,
+    "supports_provenance": true,
+    "supports_symbol_isin_mapping": true,
+    "universe_membership_quality": "complete"
+  },
+  "content_hash": "sha256:025be13e0398354398f385a9705b2471bfa0870e11cffb083a3ebcd0bcd23d5b",
+  "coverage_end": "2024-01-31",
+  "coverage_start": "2024-01-02",
+  "exchange_authority": false,
+  "exchanges": [
+    "NSE"
+  ],
+  "frequencies": [
+    "1d"
+  ],
+  "generation_timestamp": "2026-08-12T09:03:17.407315+00:00",
+  "license_status": "verified",
+  "limitations": [
+    "TEST_FIXTURE_ONLY",
+    "Prices and membership are fabricated for continuous integration",
+    "Must never be presented as real market data or exchange authority"
+  ],
+  "package_id": "phase9a_test_fixture_only_research_capable",
+  "package_version": "1.0.0",
+  "provenance": {
+    "download_timestamp": "2026-08-12T09:03:17.404999+00:00",
+    "license_status": "verified",
+    "test_fixture_only": true
+  },
+  "provider": "test_fixture_only_vendor",
+  "provider_name": "TEST_FIXTURE_ONLY Vendor",
+  "schema_version": "quantfund_research_package_v1",
+  "source_grade": "paid",
+  "synthetic": false,
+  "test_fixture_only": true,
+  "usage_notes": "TEST_FIXTURE_ONLY \u2014 fabricated prices for CI gate tests. Not real NSE data.",
+  "vendor": "test_fixture_only_vendor"
+}

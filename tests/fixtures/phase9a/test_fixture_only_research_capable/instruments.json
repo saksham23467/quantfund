@@ -1,0 +1,56 @@
+[
+  {
+    "symbol": "AAA",
+    "instrument_id": "NSE:TESTAAA0001",
+    "isin": "TESTAAA0001",
+    "name": "Fixture AAA Ltd",
+    "exchange": "NSE",
+    "series": "EQ",
+    "currency": "INR",
+    "asset_class": "equity",
+    "listing_date": "2020-01-01",
+    "delisting_date": null,
+    "status": "active",
+    "aliases": [
+      "AAAOLD"
+    ],
+    "symbol_history": [
+      {
+        "symbol": "AAAOLD",
+        "valid_from": "2020-01-01",
+        "valid_to": "2023-12-31",
+        "exchange": "NSE"
+      }
+    ],
+    "metadata": {
+      "test_fixture_only": true
+    }
+  },
+  {
+    "symbol": "BBB",
+    "instrument_id": "NSE:TESTBBB0002",
+    "isin": "TESTBBB0002",
+    "name": "Fixture BBB Ltd",
+    "exchange": "NSE",
+    "series": "EQ",
+    "listing_date": "2020-01-01",
+    "status": "active",
+    "metadata": {
+      "test_fixture_only": true
+    }
+  },
+  {
+    "symbol": "DEAD",
+    "instrument_id": "NSE:TESTDEAD003",
+    "isin": "TESTDEAD003",
+    "name": "Fixture Dead Ltd",
+    "exchange": "NSE",
+    "series": "EQ",
+    "listing_date": "2015-01-01",
+    "delisting_date": "2024-01-15",
+    "status": "delisted",
+    "metadata": {
+      "test_fixture_only": true
+    }
+  }
+]

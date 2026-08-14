@@ -1,0 +1,283 @@
+{
+  "calendar_id": "NSE_EQ",
+  "calendar_version": "nse_eq_v2023_2025_r1",
+  "source": "NSE Capital Market Segment trading-holiday circulars (official exchange notifications), curated into a version-controlled session file",
+  "source_refs": [
+    {
+      "year": 2023,
+      "description": "NSE Circular NSE/CMTR/54757 dated 2022-12-08 \u2014 Trading holidays for calendar year 2023",
+      "official_url": "https://archives.nseindia.com/content/circulars/CMTR54757.pdf",
+      "official_page": "https://www.nseindia.com/resources/exchange-communication-holidays"
+    },
+    {
+      "year": 2023,
+      "description": "NSE Circular NSE/CMTR/59124 dated 2023-10-27 \u2014 Muhurat Trading session 2023-11-12",
+      "official_url": "https://archives.nseindia.com/content/circulars/CMTR59124.pdf",
+      "official_page": "https://www.nseindia.com/resources/exchange-communication-holidays"
+    },
+    {
+      "year": 2024,
+      "description": "NSE Circular NSE/CMTR/59722 dated 2023-12-12 \u2014 Trading holidays for calendar year 2024",
+      "mirror_url": "https://www.steelcitynettrade.com/Circulars/Trading%20holidays%20for%20the%20calendar%20year%202024.pdf",
+      "official_page": "https://www.nseindia.com/resources/exchange-communication-holidays"
+    },
+    {
+      "year": 2025,
+      "description": "NSE Circular NSE/CMTR/65587 dated 2024-12-13 \u2014 Trading holidays for calendar year 2025",
+      "mirror_url": "https://www.steelcitynettrade.com/Circulars/NSE-Trading%20holidays%20for%20the%20calendar%20year%202025.pdf",
+      "official_page": "https://www.nseindia.com/resources/exchange-communication-holidays"
+    }
+  ],
+  "source_retrieved_at": "2026-08-10T00:00:00+00:00",
+  "effective_start": "2023-01-01",
+  "effective_end": "2025-12-31",
+  "timezone": "Asia/Kolkata",
+  "verified": true,
+  "notes": [
+    "Weekends (Saturday/Sunday) are always closed unless listed under special_sessions.",
+    "Diwali Laxmi Pujan days with Muhurat Trading are OPEN special sessions, not full closures.",
+    "Holidays that fall on weekends are omitted from full_holidays (already closed as weekend).",
+    "This file is auditable and immutable for a given calendar_version; extend via a new version.",
+    "Do not confuse with BSE/XBOM proxy calendars.",
+    "Supersedes coverage of nse_eq_v2024_2025_r1 by extending verified coverage to 2023; does not overwrite that version."
+  ],
+  "full_holidays": [
+    {
+      "date": "2023-01-26",
+      "name": "Republic Day"
+    },
+    {
+      "date": "2023-03-07",
+      "name": "Holi"
+    },
+    {
+      "date": "2023-03-30",
+      "name": "Ram Navami"
+    },
+    {
+      "date": "2023-04-04",
+      "name": "Mahavir Jayanti"
+    },
+    {
+      "date": "2023-04-07",
+      "name": "Good Friday"
+    },
+    {
+      "date": "2023-04-14",
+      "name": "Dr. Baba Saheb Ambedkar Jayanti"
+    },
+    {
+      "date": "2023-05-01",
+      "name": "Maharashtra Day"
+    },
+    {
+      "date": "2023-06-28",
+      "name": "Bakri Id"
+    },
+    {
+      "date": "2023-08-15",
+      "name": "Independence Day"
+    },
+    {
+      "date": "2023-09-19",
+      "name": "Ganesh Chaturthi"
+    },
+    {
+      "date": "2023-10-02",
+      "name": "Mahatma Gandhi Jayanti"
+    },
+    {
+      "date": "2023-10-24",
+      "name": "Dussehra"
+    },
+    {
+      "date": "2023-11-14",
+      "name": "Diwali-Balipratipada"
+    },
+    {
+      "date": "2023-11-27",
+      "name": "Gurunanak Jayanti"
+    },
+    {
+      "date": "2023-12-25",
+      "name": "Christmas"
+    },
+    {
+      "date": "2024-01-26",
+      "name": "Republic Day"
+    },
+    {
+      "date": "2024-03-08",
+      "name": "Mahashivratri"
+    },
+    {
+      "date": "2024-03-25",
+      "name": "Holi"
+    },
+    {
+      "date": "2024-03-29",
+      "name": "Good Friday"
+    },
+    {
+      "date": "2024-04-11",
+      "name": "Id-Ul-Fitr (Ramadan Eid)"
+    },
+    {
+      "date": "2024-04-17",
+      "name": "Shri Ram Navmi"
+    },
+    {
+      "date": "2024-05-01",
+      "name": "Maharashtra Day"
+    },
+    {
+      "date": "2024-06-17",
+      "name": "Bakri Id"
+    },
+    {
+      "date": "2024-07-17",
+      "name": "Moharram"
+    },
+    {
+      "date": "2024-08-15",
+      "name": "Independence Day / Parsi New Year"
+    },
+    {
+      "date": "2024-10-02",
+      "name": "Mahatma Gandhi Jayanti"
+    },
+    {
+      "date": "2024-11-15",
+      "name": "Gurunanak Jayanti"
+    },
+    {
+      "date": "2024-12-25",
+      "name": "Christmas"
+    },
+    {
+      "date": "2025-02-26",
+      "name": "Mahashivratri"
+    },
+    {
+      "date": "2025-03-14",
+      "name": "Holi"
+    },
+    {
+      "date": "2025-03-31",
+      "name": "Id-Ul-Fitr (Ramadan Eid)"
+    },
+    {
+      "date": "2025-04-10",
+      "name": "Shri Mahavir Jayanti"
+    },
+    {
+      "date": "2025-04-14",
+      "name": "Dr. Baba Saheb Ambedkar Jayanti"
+    },
+    {
+      "date": "2025-04-18",
+      "name": "Good Friday"
+    },
+    {
+      "date": "2025-05-01",
+      "name": "Maharashtra Day"
+    },
+    {
+      "date": "2025-08-15",
+      "name": "Independence Day"
+    },
+    {
+      "date": "2025-08-27",
+      "name": "Ganesh Chaturthi"
+    },
+    {
+      "date": "2025-10-02",
+      "name": "Mahatma Gandhi Jayanti / Dussehra"
+    },
+    {
+      "date": "2025-10-22",
+      "name": "Diwali-Balipratipada"
+    },
+    {
+      "date": "2025-11-05",
+      "name": "Prakash Gurpurb Sri Guru Nanak Dev"
+    },
+    {
+      "date": "2025-12-25",
+      "name": "Christmas"
+    }
+  ],
+  "special_sessions": [
+    {
+      "date": "2023-11-12",
+      "name": "Diwali Laxmi Pujan \u2014 Muhurat Trading",
+      "session_type": "special",
+      "is_open": true,
+      "note": "NSE circular NSE/CMTR/59124: Muhurat Trading conducted on Sunday 2023-11-12; treated as OPEN equity session for daily bars."
+    },
+    {
+      "date": "2024-11-01",
+      "name": "Diwali Laxmi Pujan \u2014 Muhurat Trading",
+      "session_type": "special",
+      "is_open": true,
+      "note": "NSE circular: Muhurat Trading conducted on 2024-11-01; treated as OPEN equity session for daily bars."
+    },
+    {
+      "date": "2025-10-21",
+      "name": "Diwali Laxmi Pujan \u2014 Muhurat Trading",
+      "session_type": "special",
+      "is_open": true,
+      "note": "NSE circular: Muhurat Trading conducted on 2025-10-21; treated as OPEN equity session for daily bars."
+    }
+  ],
+  "weekend_holidays_informational": [
+    {
+      "date": "2023-02-18",
+      "name": "Mahashivratri (Saturday)"
+    },
+    {
+      "date": "2023-04-22",
+      "name": "Id-Ul-Fitr (Ramzan ID) (Saturday)"
+    },
+    {
+      "date": "2023-07-29",
+      "name": "Moharram (Saturday)"
+    },
+    {
+      "date": "2024-04-14",
+      "name": "Dr. Baba Saheb Ambedkar Jayanti (Sunday)"
+    },
+    {
+      "date": "2024-04-21",
+      "name": "Shri Mahavir Jayanti (Sunday)"
+    },
+    {
+      "date": "2024-09-07",
+      "name": "Ganesh Chaturthi (Saturday)"
+    },
+    {
+      "date": "2024-10-12",
+      "name": "Dussehra (Saturday)"
+    },
+    {
+      "date": "2024-11-02",
+      "name": "Diwali-Balipratipada (Saturday)"
+    },
+    {
+      "date": "2025-01-26",
+      "name": "Republic Day (Sunday)"
+    },
+    {
+      "date": "2025-04-06",
+      "name": "Shri Ram Navami (Sunday)"
+    },
+    {
+      "date": "2025-06-07",
+      "name": "Bakri Id (Saturday)"
+    },
+    {
+      "date": "2025-07-06",
+      "name": "Muharram (Sunday)"
+    }
+  ]
+}

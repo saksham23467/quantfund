@@ -1,0 +1,10 @@
+{
+  "universe_id": "nifty50",
+  "universe_version": "stage_a_sample_v1",
+  "completeness": "current_snapshot_only",
+  "as_of_date": "2024-01-08",
+  "warnings": [
+    "NOT POINT-IN-TIME. UNSUITABLE FOR FINAL STRATEGY EVALUATION."
+  ],
+  "survivorship_warning": "NOT POINT-IN-TIME. UNSUITABLE FOR FINAL STRATEGY EVALUATION."
+}

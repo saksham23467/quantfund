@@ -1,0 +1,14 @@
+# Reproducible runtime/dev pins for QuantFund EC2/Linux installs.
+# Install: python3.12 -m pip install -r requirements-lock.txt && pip install -e ".[dev]"
+# Do not put secrets here.
+
+pandas==3.0.5
+numpy==2.5.2
+pydantic==2.13.4
+pyarrow==25.0.1
+yfinance==1.5.2
+exchange_calendars==4.13.2
+pytest==9.1.1
+matplotlib==3.11.1
+tzdata==2026.3
+requests==2.34.2

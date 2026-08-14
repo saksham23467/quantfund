@@ -1,0 +1,28 @@
+# Keep the backend build context small. The backend image only needs:
+#   pyproject.toml, src/ (core quantfund), quantfund_terminal/, reports/
+.git
+.venv
+venv
+**/__pycache__
+**/*.pyc
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# Large data / artifacts not needed in the image
+data
+datasets
+runs
+experiments
+*.csv
+*.parquet
+*.db
+*.db-journal
+
+# Frontend build artifacts (frontend has its own image + .dockerignore)
+quantfund_terminal/frontend/node_modules
+quantfund_terminal/frontend/.next
+quantfund_terminal/frontend/.env.local
+
+# Local SQLite demo db
+quantfund_terminal/*.db

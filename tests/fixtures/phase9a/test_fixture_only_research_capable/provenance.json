@@ -1,0 +1,7 @@
+{
+  "provider": "test_fixture_only_vendor",
+  "download_timestamp": "2026-08-12T09:03:17.404754+00:00",
+  "license_status": "verified",
+  "test_fixture_only": true,
+  "content_hashes": {}
+}

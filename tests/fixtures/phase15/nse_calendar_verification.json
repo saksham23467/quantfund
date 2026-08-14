@@ -1,0 +1,93 @@
+{
+  "fixture_id": "nse_calendar_verification_v2",
+  "calendar_id": "NSE_EQ",
+  "calendar_version": "nse_eq_v2018_2026_r1",
+  "documentation": "tests/fixtures/phase15/SOURCES.md",
+  "open_sessions": [
+    {
+      "date": "2023-01-03",
+      "reason": "Regular Tuesday session; not an NSE holiday",
+      "source": "NSE Circular NSE/CMTR/54757 (date absent from holiday list) + weekday"
+    },
+    {
+      "date": "2023-11-12",
+      "reason": "Muhurat Trading special session (Diwali Laxmi Pujan) on Sunday",
+      "source": "NSE Circular NSE/CMTR/59124"
+    },
+    {
+      "date": "2024-01-02",
+      "reason": "Regular Tuesday session; not an NSE holiday",
+      "source": "NSE 2024 holiday circular (date absent from holiday list) + weekday"
+    },
+    {
+      "date": "2024-01-25",
+      "reason": "Regular Thursday before Republic Day holiday",
+      "source": "NSE 2024 holiday circular"
+    },
+    {
+      "date": "2024-11-01",
+      "reason": "Muhurat Trading special session (Diwali Laxmi Pujan)",
+      "source": "NSE Circular NSE/CMTR/59722 footnote on Muhurat Trading 2024-11-01"
+    },
+    {
+      "date": "2025-01-02",
+      "reason": "Regular Thursday session; Republic Day 2025 fell on Sunday",
+      "source": "NSE 2025 holiday circular"
+    },
+    {
+      "date": "2025-10-21",
+      "reason": "Muhurat Trading special session (Diwali Laxmi Pujan)",
+      "source": "NSE Circular NSE/CMTR/65587 footnote on Muhurat Trading 2025-10-21"
+    }
+  ],
+  "closed_holidays": [
+    {
+      "date": "2023-01-26",
+      "reason": "Republic Day",
+      "source": "NSE Circular NSE/CMTR/54757"
+    },
+    {
+      "date": "2023-03-07",
+      "reason": "Holi",
+      "source": "NSE Circular NSE/CMTR/54757"
+    },
+    {
+      "date": "2024-01-26",
+      "reason": "Republic Day",
+      "source": "NSE Circular NSE/CMTR/59722"
+    },
+    {
+      "date": "2024-03-25",
+      "reason": "Holi",
+      "source": "NSE Circular NSE/CMTR/59722"
+    },
+    {
+      "date": "2024-08-15",
+      "reason": "Independence Day",
+      "source": "NSE Circular NSE/CMTR/59722"
+    },
+    {
+      "date": "2024-12-25",
+      "reason": "Christmas",
+      "source": "NSE Circular NSE/CMTR/59722"
+    },
+    {
+      "date": "2025-03-14",
+      "reason": "Holi",
+      "source": "NSE Circular NSE/CMTR/65587"
+    },
+    {
+      "date": "2025-10-22",
+      "reason": "Diwali-Balipratipada (full holiday; day after Muhurat)",
+      "source": "NSE Circular NSE/CMTR/65587"
+    }
+  ],
+  "weekends": [
+    {"date": "2023-01-07", "reason": "Saturday"},
+    {"date": "2023-01-08", "reason": "Sunday"},
+    {"date": "2024-01-06", "reason": "Saturday"},
+    {"date": "2024-01-07", "reason": "Sunday"},
+    {"date": "2025-01-25", "reason": "Saturday"},
+    {"date": "2025-01-26", "reason": "Sunday (also Republic Day on weekend)"}
+  ]
+}

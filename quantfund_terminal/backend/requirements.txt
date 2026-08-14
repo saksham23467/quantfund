@@ -1,0 +1,11 @@
+# QuantFund Research Terminal — backend gateway
+# Install into the repo's existing .venv (which already provides quantfund,
+# numpy, pandas) so the gateway can call the real research infrastructure.
+fastapi>=0.111
+uvicorn[standard]>=0.30
+pydantic>=2.6
+sqlalchemy>=2.0
+# numpy / pandas are provided by the parent QuantFund environment.
+# Local/demo uses SQLite (stdlib) + an in-process cache; zero extra infra.
+# Optional (production): redis>=5.0, psycopg[binary]>=3.1 (Postgres/RDS),
+# alembic>=1.13 (migrations), stripe>=9.0 (billing).

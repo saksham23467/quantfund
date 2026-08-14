@@ -1,0 +1,25 @@
+{
+  "completeness": "full_pit",
+  "verification_status": "verified",
+  "source": "test_fixture_only",
+  "memberships": [
+    {
+      "universe_id": "nifty50",
+      "instrument_id": "NSE:TESTAAA0001",
+      "symbol": "AAA",
+      "member_from": "2024-01-02",
+      "member_to": "2024-01-31",
+      "source": "test_fixture_only",
+      "verification_status": "verified"
+    },
+    {
+      "universe_id": "nifty50",
+      "instrument_id": "NSE:TESTBBB0002",
+      "symbol": "BBB",
+      "member_from": "2024-01-02",
+      "member_to": "2024-01-31",
+      "source": "test_fixture_only",
+      "verification_status": "verified"
+    }
+  ]
+}

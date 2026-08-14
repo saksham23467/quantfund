@@ -1,0 +1,64 @@
+# Local + EC2 stack: Postgres + Redis + backend + frontend.
+# Local:  docker compose up --build
+# EC2:    API_BASE=http://<EC2_PUBLIC_IP>:8000 docker compose up --build -d
+#         (or just run deploy/ec2_deploy.sh, which sets API_BASE from instance metadata)
+# Backend build context is the repo root so the core `quantfund` package is available.
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: quantfund
+      POSTGRES_PASSWORD: quantfund
+      POSTGRES_DB: quantfund
+    ports: ["5432:5432"]
+    volumes: ["pgdata:/var/lib/postgresql/data"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U quantfund"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  backend:
+    build:
+      context: ..                       # repo root (needs src/quantfund + reports)
+      dockerfile: quantfund_terminal/backend/Dockerfile
+    environment:
+      QFT_DATABASE_URL: postgresql+psycopg://quantfund:quantfund@postgres:5432/quantfund
+      QFT_REDIS_URL: redis://redis:6379/0
+      QFT_BILLING_PROVIDER: mock
+      # Allow the browser origin. On EC2 the deploy script sets CORS_ORIGINS to the
+      # public frontend origin; defaults keep local dev working.
+      QFT_CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://127.0.0.1:3000}
+    ports: ["8000:8000"]
+    restart: unless-stopped
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+    # Seed demo data on boot (idempotent), then serve.
+    command: >
+      sh -c "python quantfund_terminal/backend/seed.py || true &&
+             python -m uvicorn quantfund_terminal.backend.app.main:app --host 0.0.0.0 --port 8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        # Baked at build time. On EC2 set API_BASE to http://<PUBLIC_IP>:8000 so the
+        # browser (not the container) can reach the API. Defaults to localhost.
+        NEXT_PUBLIC_API_BASE: ${API_BASE:-http://localhost:8000}
+    ports: ["3000:3000"]
+    restart: unless-stopped
+    depends_on: ["backend"]
+
+volumes:
+  pgdata:

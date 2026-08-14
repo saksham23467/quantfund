@@ -1,0 +1,9 @@
+{
+  "master_id": "india_eq",
+  "master_version": "pilot_synthetic_v1",
+  "source": "phase35_synthetic_pilot",
+  "instrument_count": 8,
+  "created_at": "2026-08-10T17:17:59.942969+00:00",
+  "notes": "Pilot instrument master from synthetic package (real ISINs, synthetic prices).",
+  "delisted_count": 0
+}

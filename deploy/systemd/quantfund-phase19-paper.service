@@ -1,0 +1,38 @@
+# QuantFund Phase 19 — controlled paper trading (EC2)
+# PAPER ONLY. Zero real Zerodha order submissions.
+# Install: sudo cp deploy/systemd/quantfund-phase19-paper.service /etc/systemd/system/
+#          sudo systemctl daemon-reload && sudo systemctl enable --now quantfund-phase19-paper
+#
+# Secrets: load from EnvironmentFile (gitignored). Never put API secrets in this unit.
+
+[Unit]
+Description=QuantFund Phase 19 Controlled Paper Trading
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/quantfund
+EnvironmentFile=-/home/ubuntu/quantfund/.env
+Environment=QUANTFUND_PHASE19_DURATION=1d
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/ubuntu/quantfund/.venv/bin/python scripts/run_phase19_paper.py
+Restart=on-failure
+RestartSec=10
+# Resource limits (t3.small-friendly)
+MemoryMax=1G
+CPUQuota=80%
+# Journal / checkpoint persistence lives under experiments/phase19/
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=quantfund-phase19
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/home/ubuntu/quantfund/experiments /home/ubuntu/quantfund/reports /home/ubuntu/quantfund/logs
+
+[Install]
+WantedBy=multi-user.target

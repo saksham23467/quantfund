@@ -1,0 +1,16 @@
+[
+  {
+    "event_id": "term_dead_delist",
+    "instrument_id": "NSE:TESTDEAD003",
+    "symbol": "DEAD",
+    "event_type": "delisting",
+    "event_date": "2024-01-15",
+    "last_trade_date": "2024-01-12",
+    "source": "test_fixture_only",
+    "verification_status": "verified",
+    "confidence": "verified",
+    "provenance": {
+      "test_fixture_only": true
+    }
+  }
+]

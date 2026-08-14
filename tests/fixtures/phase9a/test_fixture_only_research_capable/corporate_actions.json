@@ -1,0 +1,57 @@
+[
+  {
+    "action_id": "fix_aaa_split",
+    "instrument_id": "NSE:TESTAAA0001",
+    "symbol": "AAA",
+    "action_type": "split",
+    "ex_date": "2024-01-10",
+    "ratio_num": 2,
+    "ratio_den": 1,
+    "source": "test_fixture_only",
+    "verified": true,
+    "raw_payload": {
+      "test_fixture_only": true
+    }
+  },
+  {
+    "action_id": "test_bbb_bonus",
+    "instrument_id": "NSE:TESTBBB0002",
+    "symbol": "BBB",
+    "action_type": "bonus",
+    "ex_date": "2024-01-12",
+    "ratio_num": 2,
+    "ratio_den": 1,
+    "source": "test_fixture_only",
+    "verified": true,
+    "raw_payload": {
+      "test_fixture_only": true
+    }
+  },
+  {
+    "action_id": "test_aaa_div",
+    "instrument_id": "NSE:TESTAAA0001",
+    "symbol": "AAA",
+    "action_type": "dividend",
+    "ex_date": "2024-01-18",
+    "cash_amount": 1.5,
+    "source": "test_fixture_only",
+    "verified": true,
+    "raw_payload": {
+      "test_fixture_only": true
+    }
+  },
+  {
+    "action_id": "test_merger_event",
+    "instrument_id": "NSE:TESTDEAD003",
+    "symbol": "DEAD",
+    "action_type": "merger",
+    "ex_date": "2024-01-15",
+    "source": "test_fixture_only",
+    "verified": false,
+    "requires_manual_treatment": true,
+    "raw_payload": {
+      "test_fixture_only": true,
+      "treatment": "manual"
+    }
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "symbol": "RELIANCE",
+    "instrument_id": "NSE:INE002A01018",
+    "isin": "INE002A01018",
+    "name": "Reliance Industries Ltd",
+    "exchange": "NSE",
+    "currency": "INR",
+    "asset_class": "equity",
+    "listing_date": "2000-01-01",
+    "delisting_date": null,
+    "provider_symbol": "RELIANCE.NS",
+    "provider_symbols": {
+      "yfinance": "RELIANCE.NS",
+      "local_package": "RELIANCE"
+    },
+    "symbol_history": [],
+    "metadata": {
+      "pilot": true
+    }
+  },
+  {
+    "symbol": "TCS",
+    "instrument_id": "NSE:INE467B01029",
+    "isin": "INE467B01029",
+    "name": "Tata Consultancy Services Ltd",
+    "exchange": "NSE",
+    "currency": "INR",
+    "asset_class": "equity",
+    "listing_date": "2000-01-01",
+    "delisting_date": null,
+    "provider_symbol": "TCS.NS",
+    "provider_symbols": {
+      "yfinance": "TCS.NS",
+      "local_package": "TCS"
+    },
+    "symbol_history": [],
+    "metadata": {
+      "pilot": true
+    }
+  },
+  {
+    "symbol": "INFY",
+    "instrument_id": "NSE:INE009A01021",
+    "isin": "INE009A01021",
+    "name": "Infosys Ltd",
+    "exchange": "NSE",
+    "currency": "INR",
+    "asset_class": "equity",
+    "listing_date": "2000-01-01",
+    "delisting_date": null,
+    "provider_symbol": "INFY.NS",
+    "provider_symbols": {
+      "yfinance": "INFY.NS",
+      "local_package": "INFY"
+    },
+    "symbol_history": [],
+    "metadata": {
+      "pilot": true
+    }
+  },
+  {
+    "symbol": "HDFCBANK",
+    "instrument_id": "NSE:INE040A01034",
+    "isin": "INE040A01034",
+    "name": "HDFC Bank Ltd",
+    "exchange": "NSE",
+    "currency": "INR",
+    "asset_class": "equity",
+    "listing_date": "2000-01-01",
+    "delisting_date": null,
+    "provider_symbol": "HDFCBANK.NS",
+    "provider_symbols": {
+      "yfinance": "HDFCBANK.NS",
+      "local_package": "HDFCBANK"
+    },
+    "symbol_history": [],
+    "metadata": {
+      "pilot": true
+    }
+  },
+  {
+    "symbol": "ICICIBANK",
+    "instrument_id": "NSE:INE090A01021",
+    "isin": "INE090A01021",
+    "name": "ICICI Bank Ltd",
+    "exchange": "NSE",
+    "currency": "INR",
+    "asset_class": "equity",
+    "listing_date": "2000-01-01",
+    "delisting_date": null,
+    "provider_symbol": "ICICIBANK.NS",
+    "provider_symbols": {
+      "yfinance": "ICICIBANK.NS",
+      "local_package": "ICICIBANK"
+    },
+    "symbol_history": [],
+    "metadata": {
+      "pilot": true
+    }
+  },
+  {
+    "symbol": "UPL",
+    "instrument_id": "NSE:INE628A01036",
+    "isin": "INE628A01036",
+    "name": "UPL Ltd",
+    "exchange": "NSE",
+    "currency": "INR",
+    "asset_class": "equity",
+    "listing_date": "2000-01-01",
+    "delisting_date": null,
+    "provider_symbol": "UPL.NS",
+    "provider_symbols": {
+      "yfinance": "UPL.NS",
+      "local_package": "UPL"
+    },
+    "symbol_history": [],
+    "metadata": {
+      "pilot": true
+    }
+  },
+  {
+    "symbol": "SHRIRAMFIN",
+    "instrument_id": "NSE:INE721A01047",
+    "isin": "INE721A01047",
+    "name": "Shriram Finance Ltd",
+    "exchange": "NSE",
+    "currency": "INR",
+    "asset_class": "equity",
+    "listing_date": "2000-01-01",
+    "delisting_date": null,
+    "provider_symbol": "SHRIRAMFIN.NS",
+    "provider_symbols": {
+      "yfinance": "SHRIRAMFIN.NS",
+      "local_package": "SHRIRAMFIN"
+    },
+    "symbol_history": [],
+    "metadata": {
+      "pilot": true
+    }
+  },
+  {
+    "symbol": "BEL",
+    "instrument_id": "NSE:INE263A01024",
+    "isin": "INE263A01024",
+    "name": "Bharat Electronics Ltd",
+    "exchange": "NSE",
+    "currency": "INR",
+    "asset_class": "equity",
+    "listing_date": "2000-01-01",
+    "delisting_date": null,
+    "provider_symbol": "BEL.NS",
+    "provider_symbols": {
+      "yfinance": "BEL.NS",
+      "local_package": "BEL"
+    },
+    "symbol_history": [],
+    "metadata": {
+      "pilot": true
+    }
+  }
+]

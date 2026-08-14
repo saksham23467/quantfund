@@ -1,0 +1,40 @@
+{
+  "universe_id": "nifty50",
+  "universe_version": "stage_a_sample_v1",
+  "completeness": "current_snapshot_only",
+  "as_of_date": "2024-01-08",
+  "effective_start": "2024-01-08",
+  "effective_end": "2024-01-08",
+  "source": "manual_sample_for_phase1_tests",
+  "members": [
+    {
+      "instrument_id": "NSE:TEST",
+      "symbol": "TEST",
+      "provider_symbol": "TEST.NS",
+      "name": "Synthetic Test Equity"
+    },
+    {
+      "instrument_id": "NSE:RELIANCE",
+      "symbol": "RELIANCE",
+      "provider_symbol": "RELIANCE.NS",
+      "name": "Reliance Industries"
+    },
+    {
+      "instrument_id": "NSE:TCS",
+      "symbol": "TCS",
+      "provider_symbol": "TCS.NS",
+      "name": "Tata Consultancy Services"
+    },
+    {
+      "instrument_id": "NSE:INFY",
+      "symbol": "INFY",
+      "provider_symbol": "INFY.NS",
+      "name": "Infosys"
+    }
+  ],
+  "warnings": [
+    "NOT POINT-IN-TIME. UNSUITABLE FOR FINAL STRATEGY EVALUATION."
+  ],
+  "created_at": "2024-01-08T00:00:00+00:00",
+  "notes": "Small Stage A sample for Phase 1 infrastructure. Not the full NIFTY 50."
+}

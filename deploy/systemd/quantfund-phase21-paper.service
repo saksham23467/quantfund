@@ -1,0 +1,45 @@
+# QuantFund Phase 21 — autonomous real-time PAPER trading (EC2)
+# PAPER ONLY. Zero real Zerodha order submissions. LIVE_TRADING=DISABLED.
+#
+# Install:
+#   sudo cp deploy/systemd/quantfund-phase21-paper.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now quantfund-phase21-paper
+#
+# Secrets: EnvironmentFile=.env (gitignored). Never put API secrets in this unit.
+
+[Unit]
+Description=QuantFund Phase 21 Autonomous Real-Time Paper Trading
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/quantfund
+EnvironmentFile=-/home/ubuntu/quantfund/.env
+Environment=QUANTFUND_PHASE21_DAYS=20
+Environment=QUANTFUND_PHASE21_POLL_SLEEP=30
+Environment=QUANTFUND_PHASE21_LIVE_QUOTE=1
+Environment=QUANTFUND_PHASE21_WRITE_ROOT_REPORTS=1
+Environment=PYTHONUNBUFFERED=1
+# Explicitly never enable live trading
+Environment=LIVE_TRADING=false
+Environment=QUANTFUND_LIVE_TRADING=0
+Environment=QUANTFUND_BROKER_WRITE=0
+ExecStart=/home/ubuntu/quantfund/.venv/bin/python scripts/run_phase21_start.py
+Restart=on-failure
+RestartSec=15
+MemoryMax=1G
+CPUQuota=80%
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=quantfund-phase21
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=read-only
+ReadWritePaths=/home/ubuntu/quantfund/experiments /home/ubuntu/quantfund/reports /home/ubuntu/quantfund/logs /home/ubuntu/quantfund/docs
+
+[Install]
+WantedBy=multi-user.target

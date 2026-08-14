@@ -1,0 +1,8 @@
+/home/ubuntu/quantfund/logs/phase19*.log {
+    daily
+    rotate 14
+    compress
+    missingok
+    notifempty
+    copytruncate
+}

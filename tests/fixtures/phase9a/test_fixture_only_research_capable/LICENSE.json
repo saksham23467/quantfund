@@ -1,0 +1,9 @@
+{
+  "license_status": "verified",
+  "license_reference": "TEST_FIXTURE_ONLY_NOT_A_REAL_LICENSE",
+  "legal_source": "QuantFund CI fixture",
+  "research_use_allowed": true,
+  "redistribution_allowed": true,
+  "acquisition_method": "fabricated_for_ci",
+  "acquisition_timestamp": "2026-08-12T09:03:17.404513+00:00"
+}

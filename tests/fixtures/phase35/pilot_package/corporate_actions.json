@@ -1,0 +1,37 @@
+[
+  {
+    "action_id": "syn_reliance_split_20240315",
+    "instrument_id": "NSE:INE002A01018",
+    "symbol": "RELIANCE",
+    "action_type": "split",
+    "ex_date": "2024-03-15",
+    "ratio_num": 2,
+    "ratio_den": 1,
+    "source": "synthetic_pilot_fixture",
+    "verified": true,
+    "notes": "SYNTHETIC split for CA engine audit \u2014 not a claim about real RELIANCE history."
+  },
+  {
+    "action_id": "syn_tcs_div_20240410",
+    "instrument_id": "NSE:INE467B01029",
+    "symbol": "TCS",
+    "action_type": "dividend",
+    "ex_date": "2024-04-10",
+    "cash_amount": 10.0,
+    "source": "synthetic_pilot_fixture",
+    "verified": true,
+    "notes": "SYNTHETIC dividend \u2014 RAW OHLC must remain unchanged."
+  },
+  {
+    "action_id": "syn_infy_bonus_20240502",
+    "instrument_id": "NSE:INE009A01021",
+    "symbol": "INFY",
+    "action_type": "bonus",
+    "ex_date": "2024-05-02",
+    "ratio_num": 3,
+    "ratio_den": 2,
+    "source": "synthetic_pilot_fixture",
+    "verified": true,
+    "notes": "SYNTHETIC 3-for-2 bonus for adjustment-policy audit."
+  }
+]

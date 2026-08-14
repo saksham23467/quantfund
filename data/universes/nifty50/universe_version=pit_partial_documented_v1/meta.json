@@ -1,0 +1,11 @@
+{
+  "universe_id": "nifty50",
+  "universe_version": "pit_partial_documented_v1",
+  "completeness": "partial_pit",
+  "verification_status": "partial",
+  "effective_start": "2023-01-01",
+  "effective_end": "2025-12-31",
+  "source": "NSE Indices Ltd reconstitution press releases (partial event log)",
+  "notes": "Partial documented reconstitutions only. Untracked names → UNKNOWN.",
+  "membership_file": "membership.csv"
+}

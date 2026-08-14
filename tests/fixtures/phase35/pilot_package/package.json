@@ -1,0 +1,76 @@
+{
+  "package_id": "india_eq_pilot_synthetic_v1",
+  "package_version": "1.0.0",
+  "provider": "local_research_package",
+  "provider_name": "QuantFund Phase 3.5 synthetic pilot package",
+  "source": "synthetic_fixture",
+  "source_grade": "synthetic",
+  "schema_version": "quantfund_research_package_v1",
+  "synthetic": true,
+  "exchange_authority": false,
+  "license_status": "redistributable",
+  "acquisition_timestamp": "2026-08-10T00:00:00+00:00",
+  "coverage_start": "2024-01-02",
+  "coverage_end": "2024-06-28",
+  "frequencies": ["1d"],
+  "exchanges": ["NSE"],
+  "asset_classes": ["equity"],
+  "checksum_algorithm": "sha256",
+  "created_at": "2026-08-10T00:00:00+00:00",
+  "license_ref": "DATA_LICENSE.md#synthetic-fixtures",
+  "licensing_notes": "Synthetic redistributable fixture for CI. Not market data.",
+  "usage_notes": "Pilot for identity/calendar/CA/membership/hashing. DEVELOPMENT_ONLY.",
+  "limitations": [
+    "Prices are synthetic \u2014 not real NSE prints",
+    "source_grade=synthetic cannot become research_eligible",
+    "NIFTY50 membership for continuous names is not fully verified in this package",
+    "Corporate actions marked synthetic are for engine audit only"
+  ],
+  "capabilities": {
+    "historical_depth": "2024-01-02..2024-06-28",
+    "corporate_action_quality": "partial",
+    "delisted_coverage": "none",
+    "universe_membership_quality": "partial",
+    "identity_coverage": "partial",
+    "exchange_authority": false,
+    "supports_instrument_master": true,
+    "supports_symbol_isin_mapping": true,
+    "supports_historical_identifiers": true,
+    "supports_daily_bars": true,
+    "supports_corporate_actions": true,
+    "supports_pit_universe": true,
+    "supports_delisted_instruments": false,
+    "supports_provenance": true,
+    "supports_licensing_evidence": true,
+    "supported_exchanges": ["NSE"],
+    "supported_date_range": {"start": "2024-01-02", "end": "2024-06-28"},
+    "redistribution_allowed": true,
+    "license_status": "redistributable",
+    "authority_evidence_refs": []
+  },
+  "provenance": {
+    "download_timestamp": "2026-08-10T00:00:00+00:00",
+    "request_parameters": {
+      "start": "2024-01-02",
+      "end": "2024-06-28",
+      "symbols": [
+        "RELIANCE",
+        "TCS",
+        "INFY",
+        "HDFCBANK",
+        "ICICIBANK",
+        "UPL",
+        "SHRIRAMFIN",
+        "BEL"
+      ]
+    },
+    "source_identifiers": {
+      "fixture": "tests/fixtures/phase35/pilot_package"
+    },
+    "content_hashes": {},
+    "coverage": {
+      "session_count_per_symbol": 121,
+      "instrument_count": 8
+    }
+  }
+}
